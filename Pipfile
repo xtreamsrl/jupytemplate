@@ -9,6 +9,7 @@ verify_ssl = true
 jupyter = "*"
 gitchangelog = "*"
 jupyter-contrib-nbextensions = "*"
+pystache = "*"
 
 [requires]
 python_version = "3.7"
