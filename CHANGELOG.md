@@ -1,9 +1,11 @@
 # Changelog
 
 
-## (unreleased)
+## 0.1.0 (2019-06-08)
 
 ### New
+
+* Clean mess with changelog file. [Emanuele Fabbiani]
 
 * Make changelog readable (0.1.0) [Emanuele Fabbiani]
 
