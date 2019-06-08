@@ -9,31 +9,6 @@ Moreover, adds a cell with commonly used imports,
 and prompts for a notebook name. 
 Quite annoyingly.
 
-## Repository setup
-Please follow this steps to be ready to go:
-1. Install the virtual environment by running:
-    ```shell
-    pipenv install
-    ```
-2. Enable Jupyter extensions by running:
-    ```shell
-    jupyter contrib nbextensions install
-    ```
-This is it. You're ready to go!
-
-## Extension setup
-Please follow these steps to get the extension up and 
-running:
-1. Locate your jupyter extensions root folder - if you are
-using a virtual environment, it should be in 
-*<venv_root>/Lib/site-packages/jupyter_contrib_nbextensions/nbextensions*
-2. Copy the folder xtream-template in this repository
-into the jupyter extensions root folder
-3. Update the extensions by running: 
-    ```shell
-    jupyter contrib nbextensions install
-    ```
-This is it. You're ready to go!
 
 ## References
 Please consider reading the following resources for

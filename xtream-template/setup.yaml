@@ -1,0 +1,11 @@
+Type: Jupyter Notebook Extension
+Compatibility: 5.x
+Name: xtream template
+Main: main.js
+Link: README.md
+Description: |
+  Sets up the Jupyter Notebook with a conventional and general-purpose
+  template to shape Data Science analysis. Moreover, adds a cell with
+  user-defined imports, and prompts for a notebook name. Quite annoyingly.
+Parameters:
+  - none
