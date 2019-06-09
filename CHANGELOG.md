@@ -1,9 +1,11 @@
 # Changelog
 
 
-## (unreleased)
+## 0.2.0 (2019-06-09)
 
 ### New
+
+* Insert template only if configured. [Emanuele Fabbiani]
 
 * First working version. [Emanuele Fabbiani]
 

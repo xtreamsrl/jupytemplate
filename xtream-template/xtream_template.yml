@@ -12,3 +12,7 @@ Parameters:
     description: Create new notebook with the default template
     input_type: checkbox
     default: true
+  - name: xtream_template.ask_title_change_if_untitled
+    description: Force user to create a notebook title different from the default Untitled
+    input_type: checkbox
+    default: true

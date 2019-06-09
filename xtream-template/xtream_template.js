@@ -1,4 +1,4 @@
-define(['require', 'jquery', 'base/js/namespace', 'base/js/namespace'],
+define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
     function (requirejs, $, Jupyter, JupyterEvents) {
         "use strict";
 
@@ -65,7 +65,7 @@ cf.set_config_file(theme='white')
 
 import matplotlib as plt
 
-# autoreload extension
+# Autoreload extension
 if 'autoreload' not in get_ipython().extension_manager.loaded:
     %load_ext autoreload
     
@@ -111,7 +111,8 @@ We report here relevant references:
 
         // define default values for config parameters
         let params = {
-            insert_template_on_creation: true
+            insert_template_on_creation: true,
+            ask_title_change_if_untitled: true
         };
 
         const add_sections = function () {
@@ -136,7 +137,7 @@ We report here relevant references:
         const prompt_name = function () {
             // Open rename notebook box if 'Untitled' in name
             if (Jupyter.notebook.notebook_name.includes('Untitled')) {
-                document.getElementsByClassName('filename')[0].click()
+                document.getElementsByClassName('filename')[0].click();
             }
         };
 
@@ -159,6 +160,14 @@ We report here relevant references:
             console.log(params);
             if (Jupyter.notebook.get_cells().length === 1 && params.insert_template_on_creation) {
                 add_sections();
+            }
+
+            if (params.ask_title_change_if_untitled) {
+                // Run when cell is executed
+                JupyterEvents.on('execute.CodeCell', prompt_name);
+
+                // Run when notebook is saved
+                JupyterEvents.on('before_save.Notebook', prompt_name);
             }
         };
 
