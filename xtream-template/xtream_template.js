@@ -141,6 +141,17 @@ We report here relevant references:
             }
         };
 
+        // define action, register with ActionHandler instance
+        const prefix = 'auto';
+        const action_name = 'inset-template-cells';
+        const action = {
+            icon: 'fa-file-text-o',
+            help: 'Insert template cells at the beginning of the notebook',
+            help_index: 'zz',
+            id: 'insert_template_cells',
+            handler: add_sections
+        };
+
         const initialize = function () {
             // update params with any specified in the server's config file.
             // the "thisextension" value of the Jupyter notebook config's
@@ -157,7 +168,6 @@ We report here relevant references:
                 .appendTo('head');
 
             // add sections to the notebook
-            console.log(params);
             if (Jupyter.notebook.get_cells().length === 1 && params.insert_template_on_creation) {
                 add_sections();
             }
@@ -169,6 +179,12 @@ We report here relevant references:
                 // Run when notebook is saved
                 JupyterEvents.on('before_save.Notebook', prompt_name);
             }
+
+            // register actions with ActionHandler instance
+            let action_full_name = Jupyter.keyboard_manager.actions.register(action, action_name, prefix);
+
+            // create toolbar button
+            Jupyter.toolbar.add_buttons_group([action_full_name]);
         };
 
         // The specially-named function load_ipython_extension will be called
