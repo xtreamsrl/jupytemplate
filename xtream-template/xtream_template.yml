@@ -7,6 +7,9 @@ Description: |
   Sets up the Jupyter Notebook with a conventional and general-purpose
   template to shape Data Science analysis. Moreover, adds a cell with
   user-defined imports, and prompts for a notebook name. Quite annoyingly.
+tags:
+  - productivity
+  - template
 Parameters:
   - name: xtream_template.insert_template_on_creation
     description: Create new notebook with the default template
