@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.3.0 (2019-06-09)
+
+### New
+
+* Implement name prompt functionality. [Emanuele Fabbiani]
+
+
 ## 0.2.0 (2019-06-09)
 
 ### New
