@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 0.4.0 (2019-06-09)
+
+### Changes
+
+* Add button to insert template. [Emanuele Fabbiani]
+
+* Include icon in configuration. [Emanuele Fabbiani]
+
+* Add tags to configuration. [Emanuele Fabbiani]
+
+
 ## 0.3.0 (2019-06-09)
 
 ### New
