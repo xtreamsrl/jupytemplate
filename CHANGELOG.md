@@ -1,6 +1,15 @@
 # Changelog
 
 
+## (unreleased)
+
+### New
+
+* First working version. [Emanuele Fabbiani]
+
+  Notebook template is complete and can be run without errors.
+
+
 ## 0.1.0 (2019-06-08)
 
 ### New

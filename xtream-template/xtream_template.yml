@@ -8,7 +8,7 @@ Description: |
   template to shape Data Science analysis. Moreover, adds a cell with
   user-defined imports, and prompts for a notebook name. Quite annoyingly.
 Parameters:
-  - name: xtream_template.insert_template_at_start
+  - name: xtream_template.insert_template_on_creation
     description: Create new notebook with the default template
     input_type: checkbox
     default: true

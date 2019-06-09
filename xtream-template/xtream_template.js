@@ -11,6 +11,10 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/namespace'],
 
         const intro_text = new CellContent('markdown',
             `# Title
+The title of the notebook should be coherent with file name. Namely, file name should be:    
+*author's initials_progressive number_title.ipynb*    
+For example:    
+*EF_01_Data Exploration.ipynb*
 
 ## Purpose
 State the purpose of the notebook.
@@ -106,7 +110,9 @@ We report here relevant references:
         );
 
         // define default values for config parameters
-        let params = {};
+        let params = {
+            insert_template_on_creation: true
+        };
 
         const add_sections = function () {
             const section_templates = [
@@ -122,9 +128,6 @@ We report here relevant references:
             ];
 
             section_templates.forEach(function (item, index) {
-                console.log(index);
-                console.log(item.cell_type);
-                console.log(item.content);
                 Jupyter.notebook.insert_cell_at_index(item.cell_type, index).set_text(item.content);
             });
         };
@@ -141,7 +144,7 @@ We report here relevant references:
             // update params with any specified in the server's config file.
             // the "thisextension" value of the Jupyter notebook config's
             // data may be undefined, but that's ok when using JQuery's extend
-            $.extend(true, params, Jupyter.notebook.config.xtream_template);
+            $.extend(true, params, Jupyter.notebook.config.data.xtream_template);
 
             // add our extension's css to the page
             $('<link/>')
@@ -153,7 +156,10 @@ We report here relevant references:
                 .appendTo('head');
 
             // add sections to the notebook
-            add_sections()
+            console.log(params);
+            if (Jupyter.notebook.get_cells().length === 1 && params.insert_template_on_creation) {
+                add_sections();
+            }
         };
 
         // The specially-named function load_ipython_extension will be called
