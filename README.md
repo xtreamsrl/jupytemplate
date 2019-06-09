@@ -2,12 +2,30 @@
 
 A simple template for jupyter notebooks.
 
-The extension sets up a new Jupyter Notebook 
+The extension sets up any new Jupyter Notebook 
 with a conventional and general-purpose
-template to shape Data Science analysis. 
-Moreover, adds a cell with commonly used imports, 
-and prompts for a notebook name. 
-Quite annoyingly.
+template to shape Data Science analysis.
+
+The template includes conventional sections,
+like *Data Import*, *Processing* and *References*,
+as well as code to perform common operations, like
+importing and configuring charting libraries. 
+
+Moreover, it prompts for a notebook name. 
+Quite annoyingly. But no worries, you can disable
+this one.
+
+## Motivations
+Jupyter notebooks are awesome tools: they enable fast 
+prototyping and ease result sharing. However, due to 
+their flexibility, they are prone to be abused. 
+
+In 
+order to help Data Scientist keep their notebooks 
+clean, a reasonably flexible yet conventional template
+may help. Moreover, such a template may be also a 
+productivity tool, which speeds up common setup,
+such as library import.
 
 ## Repository setup
 Please follow this steps to be ready to go:
