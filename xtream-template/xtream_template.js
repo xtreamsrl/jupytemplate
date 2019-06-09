@@ -50,9 +50,9 @@ pd.options.display.max_columns = 50
 pd.options.display.max_rows = 30
 
 # Visualizations
-import plotly.plotly as py
+import plotly
 import plotly.graph_objs as go
-from plotly.offline import iplot
+import plotly.offline as ply
 plotly.offline.init_notebook_mode(connected=True)
 
 import cufflinks as cf
@@ -62,7 +62,7 @@ cf.set_config_file(theme='white')
 import matplotlib as plt
 
 # autoreload extension
-if 'autoreload' not in ipython.extension_manager.loaded:
+if 'autoreload' not in get_ipython().extension_manager.loaded:
     %load_ext autoreload
     
 %autoreload 2`
@@ -76,7 +76,7 @@ We import all the required local libraries libraries`
         const setup_local_library_snippet = new CellContent('code',
             `# Include local library paths
 import sys
-sys.path.append('path/to/local/lib')
+# sys.path.append('path/to/local/lib') # uncomment and fill to import local libraries
 
 # Import local libraries`
         );
