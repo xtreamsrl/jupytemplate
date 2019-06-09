@@ -10,6 +10,11 @@ jupyter = "*"
 gitchangelog = "*"
 jupyter-contrib-nbextensions = "*"
 pystache = "*"
+pandas = "*"
+numpy = "*"
+plotly = "*"
+cufflinks = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.7"
