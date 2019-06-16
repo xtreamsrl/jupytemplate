@@ -15,6 +15,7 @@ numpy = "*"
 plotly = "*"
 cufflinks = "*"
 matplotlib = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
