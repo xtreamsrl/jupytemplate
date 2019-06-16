@@ -9,7 +9,7 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
         };
 
         const add_sections = function () {
-            const template_path = Jupyter.notebook.base_url + 'nbextensions/xtream-template/template.ipynb';
+            const template_path = Jupyter.notebook.base_url + 'nbextensions/template/template.ipynb';
             $.getJSON(template_path, json => {
                 let cells = json['cells'];
                 cells.forEach((item, index) => {
@@ -43,14 +43,14 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
             // update params with any specified in the server's config file.
             // the "thisextension" value of the Jupyter notebook config's
             // data may be undefined, but that's ok when using JQuery's extend
-            $.extend(true, params, Jupyter.notebook.config.data.xtream_template);
+            $.extend(true, params, Jupyter.notebook.config.data.template);
 
             // add our extension's css to the page
             $('<link/>')
                 .attr({
                     rel: 'stylesheet',
                     type: 'text/css',
-                    href: require.toUrl('./xtream_template.css')
+                    href: require.toUrl('./template.css')
                 })
                 .appendTo('head');
 

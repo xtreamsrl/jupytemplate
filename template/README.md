@@ -1,4 +1,4 @@
-# xtream jupyter template
+# Jupyter template
 
 A simple template for jupyter notebooks.
 

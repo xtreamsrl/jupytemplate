@@ -1,8 +1,8 @@
 Type: Jupyter Notebook Extension
 Compatibility: 5.x
-Name: xtream template
-Main: xtream_template.js
-Icon: xtream_template_icon.png
+Name: Template
+Main: main.js
+Icon: template.png
 Link: README.md
 Description: |
   Sets up the Jupyter Notebook with a conventional and general-purpose
@@ -12,11 +12,11 @@ tags:
   - productivity
   - template
 Parameters:
-  - name: xtream_template.insert_template_on_creation
+  - name: template.insert_template_on_creation
     description: Create new notebook with the default template
     input_type: checkbox
     default: true
-  - name: xtream_template.ask_title_change_if_untitled
+  - name: template.ask_title_change_if_untitled
     description: Force user to create a notebook title different from the default Untitled
     input_type: checkbox
     default: true

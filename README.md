@@ -1,4 +1,4 @@
-# xtream jupyter template
+# Jupyter template
 
 A simple template for jupyter notebooks.
 
@@ -45,7 +45,7 @@ running:
 1. Locate your jupyter extensions root folder - if you are
 using a virtual environment, it should be in 
 *<venv_root>/Lib/site-packages/jupyter_contrib_nbextensions/nbextensions*
-2. Copy the folder xtream-template in this repository
+2. Copy the folder template in this repository
 into the jupyter extensions root folder
 3. Update the extensions by running: 
     ```shell
