@@ -1,113 +1,6 @@
 define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
-    function (requirejs, $, Jupyter, JupyterEvents) {
+    function (require, $, Jupyter, JupyterEvents) {
         "use strict";
-
-        class CellContent {
-            constructor(cell_type, content) {
-                this.cell_type = cell_type;
-                this.content = content;
-            }
-        }
-
-        const intro_text = new CellContent('markdown',
-            `# Title
-The title of the notebook should be coherent with file name. Namely, file name should be:    
-*author's initials_progressive number_title.ipynb*    
-For example:    
-*EF_01_Data Exploration.ipynb*
-
-## Purpose
-State the purpose of the notebook.
-
-## Methodology
-Quickly describe assumptions and processing steps.
-
-## WIP - improvements
-Use this section only if the notebook is not final.
-
-Notable TODOs:
-- todo 1;
-- todo 2;
-- todo 3.
-
-## Results
-Describe and comment the most important results.
-
-## Suggested next steps
-State suggested next steps, based on results obtained in this notebook.`
-        );
-
-        const setup_library_text = new CellContent('markdown',
-            `# Setup
-
-## Library import
-We import all the required Python libraries`
-        );
-
-        const setup_library_snippet = new CellContent('code',
-            `# Data manipulation
-import pandas as pd
-import numpy as np
-
-# Options for pandas
-pd.options.display.max_columns = 50
-pd.options.display.max_rows = 30
-
-# Visualizations
-import plotly
-import plotly.graph_objs as go
-import plotly.offline as ply
-plotly.offline.init_notebook_mode(connected=True)
-
-import cufflinks as cf
-cf.go_offline(connected=True)
-cf.set_config_file(theme='white')
-
-import matplotlib as plt
-
-# Autoreload extension
-if 'autoreload' not in get_ipython().extension_manager.loaded:
-    %load_ext autoreload
-    
-%autoreload 2`
-        );
-
-        const setup_local_library_text = new CellContent('markdown',
-            `## Local library import
-We import all the required local libraries libraries`
-        );
-
-        const setup_local_library_snippet = new CellContent('code',
-            `# Include local library paths
-import sys
-# sys.path.append('path/to/local/lib') # uncomment and fill to import local libraries
-
-# Import local libraries`
-        );
-
-        const parameter_text = new CellContent('markdown',
-            `# Parameter definition
-We set all relevant parameters for our notebook. By convention, parameters are uppercase, while all the 
-other variables follow Python's conventions.`
-        );
-
-        const data_import_text = new CellContent('markdown',
-            `
-# Data import
-We retrieve all the required data for the analysis.`
-        );
-
-        const data_processing_text = new CellContent('markdown',
-            `# Data processing
-Put here the core of the notebook. Feel free di further split this section into subsections.`
-        );
-
-        const reference_text = new CellContent('markdown',
-            `# References
-We report here relevant references:
-1. author1, article1, journal1, year1, url1
-2. author2, article2, journal2, year2, url2`
-        );
 
         // define default values for config parameters
         let params = {
@@ -116,20 +9,14 @@ We report here relevant references:
         };
 
         const add_sections = function () {
-            const section_templates = [
-                intro_text,
-                setup_library_text,
-                setup_library_snippet,
-                setup_local_library_text,
-                setup_local_library_snippet,
-                parameter_text,
-                data_import_text,
-                data_processing_text,
-                reference_text
-            ];
-
-            section_templates.forEach(function (item, index) {
-                Jupyter.notebook.insert_cell_at_index(item.cell_type, index).set_text(item.content);
+            const template_path = Jupyter.notebook.base_url + 'nbextensions/xtream-template/template.ipynb';
+            $.getJSON(template_path, json => {
+                let cells = json['cells'];
+                cells.forEach((item, index) => {
+                    console.log(index);
+                    console.log(item);
+                    Jupyter.notebook.insert_cell_at_index(item['cell_type'], index).set_text(item['source'].join(''));
+                });
             });
         };
 
@@ -163,7 +50,7 @@ We report here relevant references:
                 .attr({
                     rel: 'stylesheet',
                     type: 'text/css',
-                    href: requirejs.toUrl('./xtream_template.css')
+                    href: require.toUrl('./xtream_template.css')
                 })
                 .appendTo('head');
 
