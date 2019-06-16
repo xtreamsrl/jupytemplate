@@ -55,7 +55,7 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
                 .appendTo('head');
 
             // add sections to the notebook
-            if (Jupyter.notebook.get_cells().length === 1 && params.insert_template_on_creation) {
+            if (Jupyter.notebook.ncells() === 1 && params.insert_template_on_creation) {
                 add_sections();
             }
 
