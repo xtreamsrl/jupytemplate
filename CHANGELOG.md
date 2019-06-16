@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 0.5.0 (2019-06-16)
+
+### New
+
+* Template is now taken from a notebook. [Emanuele Fabbiani]
+
+### Changes
+
+* Improve readme. [Emanuele Fabbiani]
+
+
 ## 0.4.0 (2019-06-09)
 
 ### Changes
