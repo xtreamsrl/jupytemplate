@@ -12,7 +12,7 @@ as well as code to perform common operations, like
 importing and configuring charting libraries. 
 
 Moreover, it prompts for a notebook name. 
-Quite annoyingly. But no worries, you can disable
+Quite annoyingly. But don't worry, you can disable
 this one.
 
 ## Motivations
