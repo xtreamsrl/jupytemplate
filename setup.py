@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='jupyter-template',
-    version='0.5.0',
+    version='0.5.1',
     packages=[''],
     url='',
     license='MIT licence',
