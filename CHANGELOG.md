@@ -1,6 +1,15 @@
 # Changelog
 
 
+## (unreleased)
+
+### Other
+
+* Usr: chg: update readme. [Emanuele Fabbiani]
+
+* Usr: new: create python package and include licence. [Emanuele Fabbiani]
+
+
 ## 0.5.0 (2019-06-16)
 
 ### New

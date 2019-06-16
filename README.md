@@ -46,7 +46,7 @@ pip install jupyter-template
 Then, you have to install the javascript files from 
 the Python package in a conventional jupyter directory:
 ```shell
-jupyter nbextension install --py jupyter-template
+jupyter nbextension install --py template
 ```
 Finally, you may want to enable the extension:
 ```shell
