@@ -1,11 +1,13 @@
 from setuptools import setup, find_packages
 
+import jupytemplate
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name='jupytemplate',
-    version='0.5.1',
+    version=jupytemplate.__version__,
     packages=find_packages(),
     url='',
     license='MIT licence',
