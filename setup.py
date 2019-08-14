@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='jupyter-template',
+    name='jupytemplate',
     version='0.5.1',
-    packages=[''],
+    packages=find_packages(),
     url='',
     license='MIT licence',
     author='Emanuele Fabbiani',
@@ -14,9 +14,17 @@ setup(
     description='Jupyter extension to support templates',
     long_description=long_description,
     long_description_content_type="text/markdown",
+    include_package_data=True,
+    zip_safe=False,
     classifiers=[
-        "Programming Language :: Python :: 3",
+        'Development Status:: 3 - Alpha',
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Science/Research',
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        'Natural Language :: English',
+        'Operating System :: OS Independent',
+        'Programming Language :: JavaScript',
+        'Programming Language :: Python :: 3',
+        'Topic :: Utilities',
     ]
 )

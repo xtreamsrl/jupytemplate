@@ -1,0 +1,17 @@
+# explicit includes
+include LICENSE.txt
+include README.md
+
+# directory includes
+graft jupytemplate
+
+# directory excludes
+prune conda.recipe
+
+# Patterns to exclude from any directory
+global-exclude *~
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .git
+global-exclude .ipynb_checkpoints
+global-exclude .DS_Store

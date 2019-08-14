@@ -9,7 +9,7 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
         };
 
         const add_sections = function () {
-            const template_path = Jupyter.notebook.base_url + 'nbextensions/template/template.ipynb';
+            const template_path = Jupyter.notebook.base_url + 'nbextensions/jupytemplate/template.ipynb';
             $.getJSON(template_path, json => {
                 let cells = json['cells'];
                 cells.forEach((item, index) => {
