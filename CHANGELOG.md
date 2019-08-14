@@ -7,5 +7,5 @@
 * Develop first version of the extension
 * Create Python package
 * Create README
-* Include LICENCE
+* Include LICENSE
 
