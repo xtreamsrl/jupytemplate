@@ -18,6 +18,7 @@ matplotlib = "*"
 twine = "*"
 pyyaml = "*"
 docutils = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

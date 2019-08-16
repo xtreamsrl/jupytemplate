@@ -59,6 +59,21 @@ You can easily enable, disable or configure the extension
 by using the [nbextension_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
 server extension.
 
+## Changing the template
+Template location can be found by running:   
+```python
+import jupytemplate
+print(jupytemplate.get_template_path())
+```
+Of course, you can modify the template as you like, do not 
+modify the file name `template.ipynb`.  
+After editing the template, run:
+```shell
+jupyter nbextension install --py jupytemplate --sys-prefix
+jupyter nbextension enable jupytemplate/main --sys-prefix
+```
+to make changes effective.
+
 ## References
 Please consider reading the following resources for
 a more comprehensive understanding:

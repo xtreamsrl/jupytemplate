@@ -1,3 +1,5 @@
+import os
+
 __version__ = '0.5.1'
 
 
@@ -14,3 +16,11 @@ def _jupyter_nbextension_paths():
         # must use / as path.sep
         require='jupytemplate/main',
     )]
+
+
+def get_template_path():
+    """
+    Get absolute path of template notebook.
+    :return: the path if the template notebook
+    """
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), 'jupytemplate', 'template.ipynb'))
