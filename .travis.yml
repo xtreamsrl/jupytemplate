@@ -9,4 +9,5 @@ install:
   - pipenv install
 
 script:
+  - python setup.py install
   - pytest
