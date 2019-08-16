@@ -7,8 +7,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 ![PyPI](https://img.shields.io/pypi/v/jupytemplate)
 ![Build Status](https://travis-ci.org/donlelef/jupytemplate.svg?branch=master)
 ![GitHub issues](https://img.shields.io/github/issues/donlelef/jupytemplate)
-![Downloads](https://pepy.tech/badge/jupytemplate)
-![Downloads](https://pepy.tech/badge/jupytemplate/month)
+[![Downloads](https://pepy.tech/badge/jupytemplate)](https://pepy.tech/project/jupytemplate)
+[![Downloads](https://pepy.tech/badge/jupytemplate/month)](https://pepy.tech/project/jupytemplate/month)
 [![Say Thanks\!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/donlelef)
 
 A simple template for jupyter notebooks.
