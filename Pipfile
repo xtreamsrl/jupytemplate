@@ -19,6 +19,7 @@ twine = "*"
 pyyaml = "*"
 docutils = "*"
 pytest = "*"
+pytest-ordering = "*"
 
 [requires]
 python_version = "3.7"
