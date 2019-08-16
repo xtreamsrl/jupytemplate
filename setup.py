@@ -26,7 +26,7 @@ setup(
         'notebook >=5.0',
     ],
     classifiers=[
-        'Development Status:: 3 - Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: End Users/Desktop',
         'Intended Audience :: Science/Research',
         "License :: OSI Approved :: MIT License",
