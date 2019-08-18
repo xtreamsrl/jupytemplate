@@ -29,6 +29,8 @@ you try and save a notebook called 'Untitled'.
 But don't worry, you can disable
 this one.
 
+![Usage_gif](docs/jupytemplate.gif)
+
 ## Motivation
 Jupyter notebooks are awesome tools: they enable fast 
 prototyping and ease result sharing. However, due to 
