@@ -1,3 +1,5 @@
+log_prefix = '[jupytemplate] ';
+
 define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
     function (require, $, Jupyter, JupyterEvents) {
         "use strict";
@@ -13,8 +15,6 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
             $.getJSON(template_path, json => {
                 let cells = json['cells'];
                 cells.forEach((item, index) => {
-                    console.log(index);
-                    console.log(item);
                     Jupyter.notebook.insert_cell_at_index(item['cell_type'], index).set_text(item['source'].join(''));
                 });
             });
@@ -54,15 +54,24 @@ define(['require', 'jquery', 'base/js/namespace', 'base/js/events'],
                 })
                 .appendTo('head');
 
-            // add sections to the notebook
+            // Add sections to the notebook and run all
             if (Jupyter.notebook.ncells() === 1 && params.insert_template_on_creation) {
+                console.log(log_prefix + 'Configuration read: adding template cells');
                 add_sections();
+                if (Jupyter.notebook.kernel && Jupyter.notebook.trusted &&
+                    Jupyter.notebook.kernel.info_reply.status === 'ok') {
+                    console.log(log_prefix + 'Kenerl ready: executing cells');
+                    Jupyter.notebook.execute_all_cells();
+                } else {
+                    console.log(log_prefix + 'Kenerl not ready: scheduling event');
+                    Jupyter.notebook.events.one('kernel_ready.Kernel', () => {
+                        console.log(log_prefix + 'Event triggered: running cells');
+                        Jupyter.notebook.execute_all_cells();
+                    })
+                }
             }
 
             if (params.ask_title_change_if_untitled) {
-                // Run when cell is executed
-                JupyterEvents.on('execute.CodeCell', prompt_name);
-
                 // Run when notebook is saved
                 JupyterEvents.on('before_save.Notebook', prompt_name);
             }

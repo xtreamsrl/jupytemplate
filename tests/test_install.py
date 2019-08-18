@@ -5,7 +5,7 @@ import pytest
 
 @pytest.mark.run(order=1)
 def test_can_install_package():
-    subprocess.run('python setup.py install', shell=True).check_returncode()
+    subprocess.run(f'python setup.py install', shell=True).check_returncode()
 
 
 @pytest.mark.run(order=2)

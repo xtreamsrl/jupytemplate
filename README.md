@@ -12,7 +12,6 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![Say Thanks\!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/donlelef)
 
 
-
 A simple template for jupyter notebooks.
 
 The extension sets up any new Jupyter Notebook 
@@ -24,9 +23,8 @@ like *Data Import*, *Processing* and *References*,
 as well as code to perform common operations, like
 importing and configuring charting libraries. 
 
-Moreover, it prompts for a notebook name. 
-
-Quite annoyingly. 
+Moreover, it prompts for a meaningful name whenever
+you try and save a notebook called 'Untitled'. 
 
 But don't worry, you can disable
 this one.
@@ -43,16 +41,13 @@ productivity tool, which speeds up common setup,
 such as library import.
 
 ## Quick start
-It is not mandatory, but it is strongly recommended to 
-install [nbextension_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator).
-Alternatively, and even more conveniently, 
-you can install the full set of Jupyter 
+It is not mandatory, but you can install the full set of Jupyter 
 extensions.
 ```shell
 pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 ```
-Feel free to visit [the repository](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
+Feel free to visit [their repository](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
 for more information.
 
 Now you can install the package:
@@ -70,7 +65,13 @@ jupyter nbextension enable jupytemplate/main --sys-prefix
 ```
 You can easily enable, disable or configure the extension
 by using the [nbextension_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
-server extension.
+server extension, as shown below.
+
+![Configuration screenshot 1](docs/configuration_1.png)
+
+
+![Configuration screenshot 2](docs/configuration_2.png)
+
 
 ## Changing the template
 Template location can be found by running:   
