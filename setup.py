@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 import jupytemplate
 
-with open("README.md", "r") as fh:
+with open("PYTHON-README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
