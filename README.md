@@ -2,11 +2,11 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-![GitHub](https://img.shields.io/github/license/donlelef/jupytemplate)
+![GitHub](https://img.shields.io/github/license/xtreamsrl/jupytemplate)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jupytemplate)
 ![PyPI](https://img.shields.io/pypi/v/jupytemplate)
-![Build Status](https://travis-ci.org/donlelef/jupytemplate.svg?branch=master)
-![GitHub issues](https://img.shields.io/github/issues/donlelef/jupytemplate)
+![Build Status](https://travis-ci.org/xtreamsrl/jupytemplate.svg?branch=master)
+![GitHub issues](https://img.shields.io/github/issues/xtreamsrl/jupytemplate)
 [![Downloads](https://pepy.tech/badge/jupytemplate)](https://pepy.tech/project/jupytemplate)
 [![Downloads](https://pepy.tech/badge/jupytemplate/month)](https://pepy.tech/project/jupytemplate/month)
 [![Say Thanks\!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/donlelef)
