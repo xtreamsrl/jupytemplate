@@ -5,6 +5,7 @@
 ### New
 
 * Run all template cells on new notebook creation
+* Add compatibility with Python 3.8
 
 ### Change
 
