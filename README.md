@@ -29,7 +29,7 @@ you try and save a notebook called 'Untitled'.
 You find this annoying? Don't worry, you can disable
 this one.
 
-![Usage_gif](docs/jupytemplate.gif)
+![Usage example_gif - see github repo](docs/jupytemplate.gif)
 
 ## Motivation
 Jupyter notebooks are awesome tools: they enable fast 
@@ -43,6 +43,11 @@ productivity tool, speeding up common setup,
 such as library import and configuration.
 
 ## Quick start
+We assume Jupyter notebook is already installed in your environment.
+However, even if this is not tha case, don't worry: jupytemplate
+declares Jupyter notebook as a dependency, thus any package manager,
+like pip, will install it for you.
+
 It is not mandatory, but you can install the full set of Jupyter 
 extensions.
 ```shell
@@ -69,10 +74,10 @@ You can easily enable, disable or configure the extension
 by using the [nbextension_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
 server extension, as shown below.
 
-![Configuration screenshot 1](docs/configuration_1.png)
+![Configuration screenshot 1 - see github repo](docs/configuration_1.png)
 
 
-![Configuration screenshot 2](docs/configuration_2.png)
+![Configuration screenshot 2- see github repo](docs/configuration_2.png)
 
 
 ## Editing the template

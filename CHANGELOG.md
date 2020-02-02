@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 (2020-02-02)
+
+### New
+
+* Simplify installation procedure by declaring dependencies
+* Public alpha release
+
 ## 0.2.0 (2019-08-18)
 
 ### New
