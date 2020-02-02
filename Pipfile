@@ -4,22 +4,21 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-
-[packages]
-jupyter = "*"
-gitchangelog = "*"
-jupyter-contrib-nbextensions = "*"
-pystache = "*"
+pytest = "*"
+pytest-ordering = "*"
 pandas = "*"
 numpy = "*"
 plotly = "*"
 cufflinks = "*"
 matplotlib = "*"
 twine = "*"
+
+[packages]
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+pystache = "*"
 pyyaml = "*"
 docutils = "*"
-pytest = "*"
-pytest-ordering = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
