@@ -26,20 +26,21 @@ importing and configuring charting libraries.
 Moreover, it prompts for a meaningful name whenever
 you try and save a notebook called 'Untitled'. 
 
-But don't worry, you can disable
+You find this annoying? Don't worry, you can disable
 this one.
 
+![Usage_gif](docs/jupytemplate.gif)
 
 ## Motivation
 Jupyter notebooks are awesome tools: they enable fast 
 prototyping and ease result sharing. However, due to 
 their flexibility, they are prone to be abused. 
 
-In order to help Data Scientist keep their notebooks 
+In order to help Data Scientists keep their notebooks 
 clean, a reasonably flexible yet conventional template
-may help. Moreover, such a template may be also a 
-productivity tool, which speeds up common setup,
-such as library import.
+may help. Moreover, the template is also a 
+productivity tool, speeding up common setup,
+such as library import and configuration.
 
 ## Quick start
 It is not mandatory, but you can install the full set of Jupyter 
@@ -66,17 +67,22 @@ jupyter nbextension enable jupytemplate/main --sys-prefix
 ```
 You can easily enable, disable or configure the extension
 by using the [nbextension_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
-server extension.
+server extension, as shown below.
+
+![Configuration screenshot 1](docs/configuration_1.png)
 
 
-## Changing the template
+![Configuration screenshot 2](docs/configuration_2.png)
+
+
+## Editing the template
 Template location can be found by running:   
 ```python
 import jupytemplate
 print(jupytemplate.get_template_path())
 ```
-Of course, you can modify the template as you like, do not 
-modify the file name `template.ipynb`.  
+Of course, you can edit the template as you like, in order 
+to adapt it to your own needs, but keep the file name `template.ipynb`.  
 After editing the template, run:
 ```shell
 jupyter nbextension install --py jupytemplate --sys-prefix
