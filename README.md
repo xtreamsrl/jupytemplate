@@ -98,6 +98,7 @@ to make changes effective.
 ## References
 Please consider reading the following resources for
 a more comprehensive understanding:
+- Emanuele Fabbiani, [Stop copy-pasting notebooks, embrace Jupyter templates](https://towardsdatascience.com/stop-copy-pasting-notebooks-embrace-jupyter-templates-6bd7b6c00b94)
 - Will Kohersen, [Set Your Jupyter Notebook up Right with this Extension](https://towardsdatascience.com/set-your-jupyter-notebook-up-right-with-this-extension-24921838a332)
 - Will Kohersen, [How to Write a Jupyter Notebook Extension](https://towardsdatascience.com/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 - Will Kohersen, [Setup extension](https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup)
