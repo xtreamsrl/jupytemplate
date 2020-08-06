@@ -26,7 +26,7 @@ importing and configuring charting libraries.
 Moreover, it prompts for a meaningful name whenever
 you try and save a notebook called 'Untitled'. 
 
-You find this annoying? Don't worry, you can disable
+Find this annoying? Don't worry, you can disable
 this one.
 
 ![Usage example_gif - see github repo](docs/jupytemplate.gif)
@@ -102,3 +102,9 @@ a more comprehensive understanding:
 - Will Kohersen, [Set Your Jupyter Notebook up Right with this Extension](https://towardsdatascience.com/set-your-jupyter-notebook-up-right-with-this-extension-24921838a332)
 - Will Kohersen, [How to Write a Jupyter Notebook Extension](https://towardsdatascience.com/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 - Will Kohersen, [Setup extension](https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup)
+
+
+# Who we are
+<img align="left" width="80" height="80" src="https://avatars2.githubusercontent.com/u/38501645?s=450&u=1eb7348ca81f5cd27ce9c02e689f518d903852b1&v=4">
+A proudly 🇮🇹 software development and data science startup.<br>We consider ourselves a family of talented and passionate people building their own products and powerful solutions for our clients. Get to know us more on <a target="_blank" href="https://xtreamers.io">xtreamers.io</a> or follow us on <a target="_blank" href="https://it.linkedin.com/company/xtream-srl">LinkedIn</a>.
+
