@@ -103,6 +103,8 @@ a more comprehensive understanding:
 - Will Kohersen, [How to Write a Jupyter Notebook Extension](https://towardsdatascience.com/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
 - Will Kohersen, [Setup extension](https://github.com/WillKoehrsen/Data-Analysis/tree/master/setup)
 
+A similar extension for Jupyter Lab has been developed by the Data Science group in JP Morgan Chase! Feel free to check out their repository at https://github.com/jpmorganchase/jupyterlab_templates.
+
 
 # Who we are
 <img align="left" width="80" height="80" src="https://avatars2.githubusercontent.com/u/38501645?s=450&u=1eb7348ca81f5cd27ce9c02e689f518d903852b1&v=4">
