@@ -43,7 +43,7 @@ such as library import and configuration.
 
 ## Quick start
 We assume Jupyter notebook is already installed in your environment.
-However, even if this is not tha case, don't worry: jupytemplate
+However, even if this is not the case, don't worry: jupytemplate
 declares Jupyter notebook as a dependency, thus any package manager,
 like pip, will install it for you.
 
